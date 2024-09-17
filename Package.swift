@@ -5,11 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "SoundpipeAudioKit",
-    platforms: [.macOS(.v12), .iOS(.v13), .tvOS(.v13)],
+    platforms: [.macOS(.v12), .iOS(.v13), .tvOS(.v13), .visionOS(.v1)],
     products: [.library(name: "SoundpipeAudioKit", targets: ["SoundpipeAudioKit"])],
     dependencies: [
         .package(url: "https://github.com/AudioKit/KissFFT", from: "1.0.0"),
-        .package(url: "https://github.com/AudioKit/AudioKit", from: "5.6.0"),
+        .package(url: "https://github.com/MeansAI/AudioKit", branch: "main"),
         .package(url: "https://github.com/AudioKit/AudioKitEX", from: "5.5.0"),
     ],
     targets: [
